@@ -1,0 +1,8 @@
+Python code is useful for data testing.
+Python reads data from a file.
+Good code should be easy to test.
+Python can process data, clean data, and count words.
+This test file contains Python, python, and PYTHON.
+Code can read the file and test the data.
+Writing code with Python makes data work easier.
+A file with repeated words helps test code.
