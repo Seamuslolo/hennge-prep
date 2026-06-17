@@ -15,3 +15,11 @@ printf ".venv\n__pycache__/\n*.pyc\n.pytest_cache\n.env\n*.db\n" > .gitignore
 echo "# HENNGE Prep" > README.md
 git add .
 git commit -m "chore: initial commit with gitignore and readme"
+
+# 5. look at what you just did
+git status
+git log --oneline
+
+# After craete new repo on github.com
+git remote add origin https://github.com/Seamuslolo/hennge-prep.git
+git 
