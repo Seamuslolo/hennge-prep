@@ -15,10 +15,10 @@ Copy and paste the intended file path to restore
 git restore file_path
 ```
 ### git stash
-2. Temporarily saves uncommitted changes and cleans the working directory so you can switch branches safely without committing.
+2. Temporarily saves staged changes and leaves the untracked files in the working directory, so switching branches safely without committing.
 ```
 git status
-git stash / add -u when files or folders is untracked
+git stash + -u when files or folders is untracked
 git switch main
 git pull
 git switch myBranch
@@ -53,9 +53,9 @@ git reset --soft B
 ```
 Basically the same as the upon line, but it keeps the changes after B unstaged 
 ```
-git reset B / git reset --mixesd B
+git reset B / git reset --mixed B
 ```
-Move to B and discards all commits after B 
+Move to B and discards all committed changes 
 ```
 git reset --hard B
 ```
@@ -73,3 +73,7 @@ git switch -c rescue branch_hash
 ## TODO
 Record ~3 min explaining the difference between revert and reset in your own words. Teaching it back is how it sets.
 
+git reset is used when working locally to move the current branch back to a previous commit and discard or reorganize commits before they are shared, effectively rewriting history to clean up work. 
+git revert is used in shared or production branches to safely undo a specific commit by creating a new commit that reverses its changes, preserving the project history and avoiding disruption for other developers.
+
+review git revert / rescue / reset again, creating a new git repo to test it
