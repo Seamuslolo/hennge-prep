@@ -19,7 +19,7 @@ def main():
         
         # Initialize variables
         count = 0
-        temp = 0
+        total = 0
         largest = None
 
         with open(file_path, 'r') as file:
@@ -34,15 +34,15 @@ def main():
                 if largest is None or num > largest:
                     largest = num
                 
-                temp += num # add current number to the sum
+                total += num # add current number to the sum
                 count += 1 # Increament count 
 
         # Handle empty / no valid number
         if count == 0:
             print("file is empty or no number is detected, nothing to compute")
             return
-        print(f"  Sum: {temp}")
-        print(f"  Average: {temp/count:.3f}")
+        print(f"  Sum: {total}")
+        print(f"  Average: {total/count:.3f}")
         print(f"  Largest: {largest}\n")
 
     except FileNotFoundError:
