@@ -80,3 +80,5 @@ review git revert / rescue / reset again, creating a new git repo to test it
 
 test 1
 test 2
+
+already revert 
