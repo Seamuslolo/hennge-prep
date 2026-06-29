@@ -77,3 +77,5 @@ git reset is used when working locally to move the current branch back to a prev
 git revert is used in shared or production branches to safely undo a specific commit by creating a new commit that reverses its changes, preserving the project history and avoiding disruption for other developers.
 
 review git revert / rescue / reset again, creating a new git repo to test it
+
+test 1
