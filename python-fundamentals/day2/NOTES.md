@@ -23,13 +23,15 @@ git commit -m "chore: initial commit with gitignore and readme"
 ```
 # 5. look at what you just did
 ```
-git status
+git status , this means the working directory matches HEAD (latest local commit)
 git log --oneline
 ```
 
-# After craete new repo on github.com
+# After create new repo on github.com
 ```
 git remote add origin https://github.com/Seamuslolo/hennge-prep.git
+git branch -M main
+git push -u origin main
 ```
 
 # Repoint the remost at the new repo
